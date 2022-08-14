@@ -1,0 +1,23 @@
+spring:
+  config:
+    import: application-log-dev.yml
+  data:
+    mongodb:
+      auto-index-creation: true
+      uri: mongodb://127.0.0.1:27011,127.0.0.1:27012,127.0.0.1:27013/zzsong-cmdb?maxPoolSize=64
+      field-naming-strategy: org.springframework.data.mapping.model.SnakeCaseFieldNamingStrategy
+  rabbitmq:
+    username: admin
+    password: admin
+    virtual-host: zzsong
+    addresses: 127.0.0.1:5672
+  redis:
+    host: 127.0.0.1
+    port: 6379
+
+zzsong-id:
+  snowflake:
+    factory: redis
+
+launcher:
+  enable-mongo-transaction-management: true

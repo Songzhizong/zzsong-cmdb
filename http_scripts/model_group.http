@@ -1,0 +1,8 @@
+### 新增模型分组
+POST http://localhost:40020/cmdb/model_group/create_group
+Content-Type: application/json
+
+{
+  "name": "主机资源",
+  "note": null
+}

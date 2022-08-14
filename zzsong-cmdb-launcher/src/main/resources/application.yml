@@ -1,0 +1,15 @@
+server:
+  port: 40020
+  shutdown: graceful
+spring:
+  application:
+    name: ZZSONG-CMDB
+  codec:
+    max-in-memory-size: 2MB
+  jackson:
+    locale: zh_CN
+    time-zone: 'GMT+8'
+    date-format: yyyy-MM-dd HH:mm:ss
+    default-property-inclusion: non_null
+  profiles:
+    active: dev

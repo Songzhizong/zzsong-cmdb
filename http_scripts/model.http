@@ -1,0 +1,10 @@
+### 新增模型
+POST http://localhost:40020/cmdb/model/create_model
+Content-Type: application/json
+
+{
+  "groupId": 390129219729883136,
+  "ident": "host",
+  "name": "云主机",
+  "note": null
+}
